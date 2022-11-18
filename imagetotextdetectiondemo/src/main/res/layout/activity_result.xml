@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Name: "
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameTitle"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:id="@+id/tvDOBTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        android:text="Date of birth: "
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvDOBTitle"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:id="@+id/tvNIDTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvDOB"
+        android:text="National Id:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvNID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvNIDTitle"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

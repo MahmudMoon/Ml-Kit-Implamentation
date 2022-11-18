@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InkRecognationActivity">
+
+    <TextView
+        android:id="@+id/signaturetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/singnatureHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/c_1" />
+
+    <View
+        android:id="@+id/c_1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#4E4E4E"
+        app:layout_constraintBottom_toTopOf="@id/customview" />
+
+    <com.example.digitalinkrecognationdemo.CustomView
+        android:id="@+id/customview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#4E4E4E"
+        app:layout_constraintTop_toBottomOf="@id/customview" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/controller_caontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:text="Clear" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:text="Submit" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="50dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
